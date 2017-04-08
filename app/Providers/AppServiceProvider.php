@@ -15,6 +15,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
 		Schema::defaultStringLength(191);
+		view()->composer('layouts.master', function($view){
+			$view->with('activePizzas', \App\Pizza::active()->get());
+		});
     }
 
     /**

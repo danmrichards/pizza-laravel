@@ -17,11 +17,17 @@ Route::get('/offers', 'PagesController@offers');
 Route::get('/gallery', 'PagesController@gallery');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/about', 'PagesController@about');
-
-Route::get('pizza/{pizza}', 'PizzasController@show');
-
-
+Route::get('/pizza/{pizza}', 'PizzasController@show');
 Route::post('/message/send', 'MessagesController@send');
+Route::get('/home', function (){
+	return redirect('/');
+});
+Route::get('/login', 'SessionsController@index');
+Route::post('/login', 'SessionsController@create');
+Route::get('/logout', 'SessionsController@destroy');
+Route::post('/logout', 'SessionsController@destroy');
+Route::get('/register', 'RegisterController@create');
+Route::post('/register', 'RegisterController@store');
 
 
 /*

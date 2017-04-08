@@ -10,11 +10,13 @@
         </div>
         <div class="right">
             <ul id="mininav">
-                <li><a href="/order">Order</a></li>
-                <li><a href="/offers">Offers</a></li>
-                <li><a href="/gallery">Gallery</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/about">About</a></li>
+                @if(auth()->check())
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/logout">Logout</a></li>
+                @else
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                @endif
             </ul>
         </div>
         <div class="clear"></div>
@@ -22,7 +24,8 @@
 </footer>
 
 
-@yield('scripts')
+<script src="{!! asset('/js/jquery.validate.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('/js/script.js') !!}"></script>
+@yield('scripts')
 </body>
 </html>

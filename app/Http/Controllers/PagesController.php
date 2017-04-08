@@ -4,34 +4,33 @@ namespace App\Http\Controllers;
 
 use File;
 
-class PagesController extends PizzasController
+class PagesController extends Controller
 {
 	public function index(){
-    	return view('index')->with(['activePizzas' => $this->activePizzas]);
+    	return view('index');
 	}
 	
 	public function order(){
- 		return view('order')->with(['activePizzas' => $this->activePizzas]);
+ 		return view('order');
 	}
 	
 	public function offers(){
- 		return view('offers')->with(['activePizzas' => $this->activePizzas]);
+ 		return view('offers');
 	}
 	
 	public function gallery(){
 		$images = File::allFiles('images/gallery/restaurant');
  		return view('gallery')->with([
- 			'activePizzas' => $this->activePizzas,
 			'images' => $images
 		]);
 	}
 	
 	public function contact(){
- 		return view('contact')->with(['activePizzas' => $this->activePizzas]);
+ 		return view('contact');
 	}
 	
 	public function about(){
- 		return view('about')->with(['activePizzas' => $this->activePizzas]);
+ 		return view('about');
 	}
 	
 	

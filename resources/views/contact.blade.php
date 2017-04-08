@@ -50,6 +50,5 @@
 @endsection
 
 @section('scripts')
-<script src="{!! asset('/js/jquery.validate.js') !!}"></script>
-{{--<script>$('form').validate();</script>--}}
+<script>$('form').validate();</script>
 @endsection

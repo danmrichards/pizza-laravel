@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use File;
+use App\Http\Controllers\Admin\GalleryController;
 
 class PagesController extends Controller
 {
@@ -19,7 +19,7 @@ class PagesController extends Controller
 	}
 	
 	public function gallery(){
-		$images = File::allFiles('images/gallery/restaurant');
+		$images = GalleryController::get();
  		return view('gallery')->with([
 			'images' => $images
 		]);

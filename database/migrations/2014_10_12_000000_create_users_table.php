@@ -18,9 +18,28 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->boolean('isAdmin')->default(false);
             $table->rememberToken();
-            $table->timestamps();
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
+        
+        DB::table('users')->insert(
+        	array(
+        		'name' => 'admin',
+				'email' => 'admin@solent.com',
+				'password' => bcrypt('pass'),
+				'isAdmin' => true,
+			)
+		);
+	
+		DB::table('users')->insert(
+			array(
+				'name' => 'user',
+				'email' => 'user@solent.com',
+				'password' => bcrypt('pass'),
+			)
+		);
     }
 
     /**

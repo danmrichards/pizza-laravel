@@ -1,0 +1,327 @@
+/*
+ADMIN PAGES
+*/
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ddd;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    width: 60px;
+}
+
+#container{
+    height: 100%;
+}
+
+#topMenu{
+    height: 50px;
+    background-color: #000;
+    color:#fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+#topMenu > *, #toLeft span{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#toLeft{
+    float: left;
+}
+
+#toLeft span{
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#toRight{
+    float: right;
+}
+
+#toRight span{
+    display: inline-block;
+    /*font-size: 1.25em;*/
+    font-weight: bold;
+    padding-left: 20px;
+    margin: 0 15px;
+    border-left: 1px dotted #ddd;  
+}
+
+#leftColumn{
+    background-color: #1f364f;
+    width: 100px;
+    margin-left: 0;
+    height: 100%;
+    float: left;
+    color: #ddd;
+    position: fixed;
+    top: 50px;
+    z-index: 2;
+}
+
+#content{
+    left: 150px;
+    position: absolute;
+    top: 100px;
+    width: 90%;
+}
+
+a, a:visited, a:hover, a:active{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#leftColumn ul{
+    list-style-type: none;
+    margin-left: -40px;
+    margin-top: 0;
+}
+
+#leftColumn ul li{
+    border-top: 1px dotted #ddd;
+    display: block;
+    height: 40px;
+    position: relative;
+    padding-left: 10px;
+}
+
+#leftColumn ul li a{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 2px #ffcb62;
+}
+
+th{
+    background-color: #ffcb62;
+    height: 40px;
+}
+th:first-child{
+    border-top-left-radius: 10px;
+}
+th:last-child{
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child
+{
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+th, td {
+   border: 1px solid #ccc;
+   width: 10%
+}
+
+th:first-child, td:first-child{
+    width: 2%;
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+    background-color: #fff;
+}
+
+td.action form{
+    display: inline-block;
+}
+
+input[type="submit"],
+#message button[type="submit"],
+#products button[type="submit"],
+.pizzas button[type="submit"]
+{
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: #ffcb62
+}
+
+#addCustomer, #editCustomer, #message, #products, #addPizza, #editPizza, #offer{
+    width: 30%;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 40px;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+#addCustomer form, #editCustomer form , #message form, #products form, #addPizza form, #editPizza form,#offer, #offer form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#addCustomer label, #editCustomer label, #message label, #addPizza label, #editPizza label,#offer label{
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+#offer form>div{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#offer form>div>label{
+    width: auto;
+    vertical-align: middle;
+}
+
+#offer form>div>label>img{
+    max-width: 250px;
+}
+
+#addCustomer input[type="text"],
+#addCustomer input[type="password"],
+#editCustomer input[type="text"],
+#editCustomer input[type="password"],
+#addPizza input[type="text"],
+#addPizza input[type="number"],
+#editPizza input[type="text"],
+#editPizza input[type="number"]
+{
+    height: 30px;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#addCustomer select, #editCustomer select{
+    height: 30px;
+    max-width: 204px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: -4px;
+    background-color: #fff;
+}
+
+.status{
+    margin: 20px auto;
+    text-align: center;
+    line-height: 300%;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.5);
+    font-weight: bold;
+}
+
+.positive{
+    background-color: rgba(0,255,0,.3);
+}
+
+.negative{
+    background-color: rgba(255,0,0,.3);
+}
+#message div.normal{
+    min-height: 50px;
+}
+
+#message div.normal:last-child{
+    text-align: center;
+}
+
+#message div.normal:last-child > * {
+    margin: 20px 10px;
+}
+
+#message, #addPizza, #editPizza{
+    width: 80%;
+}
+
+#products button{
+    margin: 10px;
+}
+
+#addPizza label, #editPizza label{
+    line-height: 500%;
+    width: auto;
+    min-width: 100px;
+}
+
+#addPizza input[type="checkbox"], #editPizza input[type="checkbox"]
+{
+    margin-left: 20px;
+}
+
+#addPizza span, #editPizza span{
+    font-weight: bold;
+}
+
+.thumbnails{
+    max-width: 150px;
+}
+
+fieldset{
+    padding: 20px;
+}
+
+fieldset legend{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#slider img, #images img{
+    width: 300px;
+    height: 200px;
+}
+
+#slides, #form, #images{
+    display: inline-block;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.3);
+}
+
+#slides img, #images img{
+    vertical-align: middle;
+}
+
+.offer-image{
+    max-height: 150px;
+}
+
+.error-form{
+    border: 1px solid rgb(255,0,0);
+    background-color: rgba(255,0,0,.2);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    color: rgb(255,0,0);
+}

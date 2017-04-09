@@ -8,7 +8,6 @@ class SessionsController extends Controller
 {
 	public function __construct()
 	{
-		parent::__construct();
 		$this->middleware('guest', ['except' => 'destroy']);
 	}
 	
@@ -22,7 +21,7 @@ class SessionsController extends Controller
  				'message' => "Please check your credentials and try again."
 			]);
 		}
-		return redirect('/');
+		return redirect('/dashboard');
  	
 	}
 	

@@ -48,6 +48,7 @@ Route::post('/admin/gallery/add', 'Admin\GalleryController@add');
 Route::post('/admin/gallery/delete', 'Admin\GalleryController@delete');
 
 Route::get('/admin/messages', 'Admin\AdminPagesController@messages');
+Route::get('/admin/message/read/{message}', 'MessagesController@read');
 /*
 GET /posts
 GET /posts/create

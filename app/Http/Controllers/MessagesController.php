@@ -23,4 +23,8 @@ class MessagesController extends Controller
 		]);
 		return redirect('/');
 	}
+	
+	public function read(Message $message){
+		return view('admin.messages.read')->with(compact('message'));
+	}
 }

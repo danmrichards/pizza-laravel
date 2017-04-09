@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
-
+use App\Message;
 
 class AdminPagesController extends Controller
 {
@@ -24,6 +24,7 @@ class AdminPagesController extends Controller
 	}
 	
 	public function messages(){
-		return view('admin.messages.messages');
+		$messages = Message::all();
+		return view('admin.messages.messages')->with(compact('messages'));
 	}
 }

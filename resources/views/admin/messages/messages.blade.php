@@ -12,23 +12,20 @@
         <th>Action</th>
         </thead>
         <tbody>
-
-        <tr >
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        @foreach($messages as $message)
+        <tr @if(!$message->read){{ "style=font-weight:bold;" }} @endif>
+            <td>{{ $message->id }}</td>
+            <td>{{ $message->name }}</td>
+            <td>{{ $message->surname }}</td>
+            <td>{{ $message->email }}</td>
+            <td>{{ $message->phone }}</td>
+            <td>{{ $message->created_at }}</td>
             <td class="action">
-                <form action="message/action/read" method="post">
-                    <button type="submit" name="read" value="">Read</button>
-                </form>
-                <form action="message/action/delete" method="post">
-                    <button type="submit" name="delete" value="">Delete</button>
-                </form>
+                <a href="/admin/message/read/{{ $message->id }}"><button>Read</button></a>
+                <a href="/admin/message/delete/{{ $message->id }}"><button>Delete</button></a>
             </td>
         </tr>
+        @endforeach
         </tbody>
     </table>
 @endsection

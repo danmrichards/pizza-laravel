@@ -6,3 +6,4 @@
 
     <div id="content">
         @yield('content')
+@include('admin.layouts.footer')

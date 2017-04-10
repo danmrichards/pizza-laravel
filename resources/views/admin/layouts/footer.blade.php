@@ -1,7 +1,7 @@
 			</div><!-- [END CONTENT] -->
 		</div><!-- [END CONTAINER] -->
-<!--        <div id="footer">
-            footer (C)
-        </div>-->
+		<div id="footer">
+			@yield('scripts')
+        </div>
 	</body>
 </html>

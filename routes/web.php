@@ -49,6 +49,14 @@ Route::post('/admin/gallery/delete', 'Admin\GalleryController@delete');
 
 Route::get('/admin/messages', 'Admin\AdminPagesController@messages');
 Route::get('/admin/message/read/{message}', 'MessagesController@read');
+Route::post('/admin/messages', 'MessagesController@reply');
+
+Route::get('/admin/offers', 'Admin\AdminPagesController@offers');
+Route::get('/admin/offers/add', 'OffersController@add');
+Route::get('/admin/offers/edit/{offer}', 'OffersController@edit');
+Route::get('/admin/offers/delete/{offer}', 'OffersController@delete');
+
+Route::post('/admin/offers/add', 'OffersController@create');
 /*
 GET /posts
 GET /posts/create

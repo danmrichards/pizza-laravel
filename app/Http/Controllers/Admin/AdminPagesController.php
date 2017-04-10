@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\Message;
-
+use App\Offer;
 class AdminPagesController extends Controller
 {
     public function index(){
@@ -26,5 +26,10 @@ class AdminPagesController extends Controller
 	public function messages(){
 		$messages = Message::all();
 		return view('admin.messages.messages')->with(compact('messages'));
+	}
+	
+	public function offers(){
+		$offers = Offer::all();
+		return view('admin.offers.offers')->with(compact('offers'));
 	}
 }

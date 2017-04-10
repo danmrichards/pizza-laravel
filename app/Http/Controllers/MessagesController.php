@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Mail\MessageReply;
 use App\Message;
+use Mail;
+
 class MessagesController extends Controller
 {
 	public function send(){
@@ -25,6 +27,15 @@ class MessagesController extends Controller
 	}
 	
 	public function read(Message $message){
+		if($message->read == 0){
+			$message->read = 1;
+			$message->save();
+		}
 		return view('admin.messages.read')->with(compact('message'));
+	}
+	
+	public function reply(){
+		Mail::to(request('mail'))->send(new MessageReply(request('reply')));
+		return redirect('/admin/messages');
 	}
 }

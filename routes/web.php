@@ -12,6 +12,7 @@
 */
 Route::get('/', 'PagesController@index');
 Route::get('/order', 'PagesController@order');
+Route::get('/order/{pizza}', 'PagesController@order');
 Route::get('/offers', 'PagesController@offers');
 Route::get('/gallery', 'PagesController@gallery');
 Route::get('/contact', 'PagesController@contact');
@@ -57,13 +58,20 @@ Route::get('/admin/offers/edit/{offer}', 'OffersController@edit');
 Route::get('/admin/offers/delete/{offer}', 'OffersController@delete');
 
 Route::post('/admin/offers/add', 'OffersController@create');
-/*
-GET /posts
-GET /posts/create
-POST /posts
-GET /posts/{id}/edit
-GET /posts/{id}
-PATCH /posts/{id}
-DELETE /posts/{id}
+Route::post('/admin/offers/update/{offer}', 'OffersController@update');
+Route::post('/admin/offers/remove/{offer}', 'OffersController@deleteImage');
 
-*/
+Route::get('/admin/slider', 'Admin\AdminPagesController@slider');
+Route::post('/admin/slider/add', 'Admin\SliderController@add');
+Route::post('/admin/slider/delete', 'Admin\SliderController@delete');
+
+Route::get('/admin/products', 'Admin\AdminPagesController@products');
+
+Route::get('/admin/products/pizzas', 'Admin\AdminPagesController@pizzas');
+Route::get('/admin/products/bases', 'Admin\AdminPagesController@bases');
+Route::get('/admin/products/toppings', 'Admin\AdminPagesController@toppings');
+Route::get('/admin/products/extras', 'Admin\AdminPagesController@extras');
+
+Route::get('/admin/products/pizzas/add', 'Admin\PizzasController@add');
+Route::post('/admin/products/pizzas/add', 'Admin\PizzasController@create');
+Route::get('/admin/products/edit/{pizza}', 'Admin\PizzasController@edit');

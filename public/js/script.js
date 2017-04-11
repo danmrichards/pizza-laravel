@@ -68,10 +68,4 @@ $(document).ready(function(){
         $('.gallery-main-img img').attr('src', $(this).attr('src'));
         $(this).attr('src', main_src);
     });
-
-
-
-
-
-
 });

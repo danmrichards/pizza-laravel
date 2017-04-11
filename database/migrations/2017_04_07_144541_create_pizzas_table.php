@@ -19,7 +19,7 @@ class CreatePizzasTable extends Migration
             $table->text('pizza_short_desc');
             $table->text('pizza_desc');
             $table->double('pizza_price', 5,2);
-            $table->boolean('active');
+            $table->boolean('active')->default(true);
         });
         
         DB::table('pizzas')->insert(

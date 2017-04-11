@@ -5,6 +5,7 @@
     <h1>Add offer</h1>
     <div id="offer">
         <form action="/admin/offers/add" method="POST" enctype="multipart/form-data">
+            @include('layouts.error')
             {{ csrf_field() }}
             <div>
                 <label>Offer name</label>

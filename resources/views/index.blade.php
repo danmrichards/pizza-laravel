@@ -1,15 +1,19 @@
 @extends('layouts.master')
 
 @section('content')
+    @if(count($slides))
     <div id="slider">
         <div id="left-arrow">
             <img src="{!! asset('images/slider/controls/left-arrow-lg.png') !!}" alt="left arrow">
         </div>
-		{{-- images --}}
+        @foreach($slides as $slide)
+            <img src="{!! asset('images/slider/slides') !!}/{{$slide->getFilename()}}" />
+        @endforeach
         <div id="right-arrow">
             <img src="{!! asset('images/slider/controls/right-arrow-lg.png') !!}" alt="left arrow">
         </div>
     </div>
+    @endif
     <section id="inset-white">
         <article id="history">
             <aside class="left">
@@ -50,4 +54,8 @@
             <div class="clear"></div>
         </article>
     </section>
+@endsection
+
+@section('scripts')
+    <script type="text/javascript" src="{!! asset('js/slider.js') !!}"></script>
 @endsection

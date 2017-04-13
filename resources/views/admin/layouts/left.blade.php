@@ -7,5 +7,6 @@
         <li><a href="/admin/orders">Orders</a></li>
         <li><a href="/admin/products">Products</a></li>
         <li><a href="/admin/slider">Slider</a></li>
+        <li><a href="/admin/about">About</a></li>
     </ul>
 </div>

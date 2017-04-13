@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Extra;
 use App\Pizza;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\Message;
 use App\Offer;
 use File;
+use App\About;
+use App\Base;
+use App\Topping;
+
 class AdminPagesController extends Controller
 {
     public function index(){
@@ -48,4 +52,26 @@ class AdminPagesController extends Controller
 		$pizzas = Pizza::all();
 		return view('admin.products.pizzas.pizzas')->with(compact('pizzas'));
 	}
+	
+	public function bases(){
+		$bases = Base::active()->get();
+		return view('admin.products.bases.bases')->with(compact('bases'));
+	}
+	
+	public function toppings(){
+		$toppings = Topping::active()->get();
+		return view('admin.products.toppings.toppings')->with(compact('toppings'));
+	}
+	
+	public function extras(){
+		$extras = Extra::active()->get();
+		return view('admin.products.extras.extras')->with(compact('extras'));
+	}
+	
+	public function about(){
+		$about = About::first();
+		return view('admin.about.about')->with(compact('about'));
+	}
+	
+	
 }

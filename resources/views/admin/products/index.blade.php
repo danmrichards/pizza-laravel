@@ -2,9 +2,9 @@
 @section('content')
 <div id="products">
         <a href="/admin/products/pizzas"><button>Pizzas</button></a>
-        <a href="/admin/products/base"><button>Bases</button></a>
-        <a href="/admin/products/topping"><button>Toppings</button></a>
-        <a href="/admin/products/extra"><button>Extras</button></a>
+        <a href="/admin/products/bases"><button>Bases</button></a>
+        <a href="/admin/products/toppings"><button>Toppings</button></a>
+        <a href="/admin/products/extras"><button>Extras</button></a>
 </div>
 
 @endsection

@@ -380,14 +380,16 @@ input[type="email"]
     box-shadow: inset 0 0 6px #000;
 }
 
-/*#order-final form input[type="text"],*/
-/*#order-final form input[type="tel"]{*/
-    /*margin-bottom: 0;*/
-/*}*/
-
 .field form textarea
 {
     height: 200px;
+}
+
+.field.about > p{
+    font-weight: normal;
+    font-size: 0.8em;
+    text-align: left;
+    margin-top: 40px;
 }
 
 input[type="submit"] {

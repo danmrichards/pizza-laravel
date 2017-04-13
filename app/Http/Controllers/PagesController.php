@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\About;
 use App\Http\Controllers\Admin\GalleryController;
 use File;
 use App\Pizza;
@@ -10,7 +11,6 @@ class PagesController extends Controller
 {
 	public function index(){
 		$slides = File::allFiles(public_path('images/slider/slides'));
-//		dd($slides);
     	return view('index')->with(compact('slides'));
 	}
 	
@@ -38,7 +38,8 @@ class PagesController extends Controller
 	}
 	
 	public function about(){
- 		return view('about');
+		$about = About::first();
+ 		return view('about')->with(compact('about'));
 	}
 	
 	

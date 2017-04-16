@@ -81,7 +81,6 @@ class PizzasController extends Controller
 	}
 	
 	public function update(Pizza $pizza){
-		dd($pizza);
 		$this->validate(request(), [
 			'pizza_name' => 'required',
 			'pizza_price' => 'required|numeric',

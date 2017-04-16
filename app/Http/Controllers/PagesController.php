@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\About;
+use App\Base;
+use App\Cart;
+use App\Extra;
 use App\Http\Controllers\Admin\GalleryController;
+use App\Topping;
 use File;
 use App\Pizza;
 use App\Offer;
@@ -15,10 +19,20 @@ class PagesController extends Controller
 	}
 	
 	public function order(Pizza $pizza){
-		if($pizza != null){
-			return view('order')->with(compact('pizza'));
+		$pizzas = Pizza::active()->get();
+		$bases = Base::active()->get();
+		$toppings = Topping::active()->get();
+		$extras = Extra::active()->get();
+		$cart = Cart::getUserCart();
+		$images = array();
+		foreach($pizzas as $p){
+			$file = File::allFiles(public_path('images/pizzas/'.$p->id));
+			$images[$p->id] = $file[0];
 		}
- 		return view('order');
+		if(!empty($pizza['attributes'])){
+			return view('order')->with(compact('pizza', 'pizzas', 'images', 'bases', 'toppings', 'extras', 'cart'));
+		}
+		return view('order')->with(compact('pizzas', 'images', 'bases', 'toppings', 'extras', 'cart'));
 	}
 	
 	public function offers(){

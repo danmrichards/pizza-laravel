@@ -99,3 +99,10 @@ Route::get('/admin/products/extras/delete/{extra}', 'Admin\ExtrasController@remo
 
 Route::get('/admin/about', 'Admin\AdminPagesController@about');
 Route::post('/admin/about/{about}', 'Admin\AboutController@save');
+
+Route::post('/cart/add', 'CartController@create');
+//Route::post('/cart/add', function(){
+//	if(Request::ajax()){
+//		return Response::json(Request::all());
+//	}
+//});

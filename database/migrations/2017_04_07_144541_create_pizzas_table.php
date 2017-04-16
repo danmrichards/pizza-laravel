@@ -36,6 +36,16 @@ class CreatePizzasTable extends Migration
 				'active' => true
 			)
 		);
+		DB::table('pizzas')->insert(
+			array(
+				'pizza_name' => 'Hawaii',
+				'pizza_short_desc' => '<p>Ham, pineapple, mushrooms.</p>',
+				'pizza_desc' => '<p>Hawaiian pizza is a pizza that usually consists of a cheese and tomato base with pieces of ham and pineapple. Often versions will have mixed peppers, mushrooms and bacon. Another variety consists of pineapple and Canadian bacon[1] or American Bacon. It is the most popular pizza in Australia, accounting for 15% of pizza sales.</p>
+                            <p>Despite its name, Hawaiian pizza is not a Hawaiian invention; it is Canadian. The Village Voice, National Post, Toronto Sun, London Free Press and The Chatham Daily News have covered Albert Hawaiian-pizza\'s claim that he created the first Hawaiian pizza at the Satellite Restaurant in Chatham, Ontario, Canada in 1962. A co-owner of the Satellite Restaurant at that time - along with his brother, Nick Panopoulos - Sam and his brother were business partners for approximately 50 years. The brothers would later build on the popularity of the Hawaiian Pizza and begin serving their next creation - the Hawaiian Burger.</p>',
+				'pizza_price' => 6.00,
+				'active' => true
+			)
+		);
     }
 
     /**

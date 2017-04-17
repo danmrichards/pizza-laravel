@@ -13,16 +13,13 @@ class CreateCartItemPizzas extends Migration
      */
     public function up()
     {
-        Schema::create('cart_item_pizza', function (Blueprint $table) {
+        Schema::create('cart_item_pizzas', function (Blueprint $table) {
 			$table->increments('id');
 			$table->integer('cart_item_id')->unsigned();
 			$table->integer('pizza_id')->unsigned();
         });
         
-        DB::table('cart_item_pizza')->insert([
-        	'cart_item_id' => 1,
-			'pizza_id' => 1
-		]);
+        
     }
 
     /**

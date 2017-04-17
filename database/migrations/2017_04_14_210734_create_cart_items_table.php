@@ -23,9 +23,7 @@ class CreateCartItemsTable extends Migration
             $table->timestamps();
         });
         
-        DB::table('cart_items')->insert([
-        	'cart_id' => 1
-		]);
+        
     }
 
     /**

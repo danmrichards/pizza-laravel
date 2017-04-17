@@ -20,25 +20,7 @@ class CreateBasesTable extends Migration
             $table->boolean('active')->default(true);
         });
         
-        DB::table('bases')->insert(array(
-        	'base_name' => 'Small',
-        	'base_price' => 0.00,
-		));
-	
-		DB::table('bases')->insert(array(
-			'base_name' => 'Medium',
-			'base_price' => 2.50,
-		));
-	
-		DB::table('bases')->insert(array(
-			'base_name' => 'Large',
-			'base_price' => 5.00,
-		));
-	
-		DB::table('bases')->insert(array(
-			'base_name' => 'X-Large',
-			'base_price' => 7.50,
-		));
+        
     }
 
     /**

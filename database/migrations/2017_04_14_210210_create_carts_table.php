@@ -23,9 +23,7 @@ class CreateCartsTable extends Migration
 			$table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
         
-        DB::table('carts')->insert([
-        	'user_id' => 1
-		]);
+        
     }
 
     /**

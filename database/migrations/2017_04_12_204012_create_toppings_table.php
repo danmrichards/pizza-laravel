@@ -20,26 +20,7 @@ class CreateToppingsTable extends Migration
             $table->boolean('active')->default(true);
         });
         
-        DB::table('toppings')->insert(array(
-        	'topping_name' => 'Cheese',
-        	'topping_price' => 0.20,
-		));
         
-        DB::table('toppings')->insert(array(
-        	'topping_name' => 'Mushrooms',
-        	'topping_price' => 0.40,
-		));
-        
-        DB::table('toppings')->insert(array(
-        	'topping_name' => 'Ham',
-        	'topping_price' => 0.50,
-		));
-        
-        DB::table('toppings')->insert(array(
-        	'topping_name' => 'Anchovies',
-        	'topping_price' => 0.60,
-		));
-    
     
     }
 

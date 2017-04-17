@@ -24,22 +24,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
         
-        DB::table('users')->insert(
-        	array(
-        		'name' => 'admin',
-				'email' => 'admin@solent.com',
-				'password' => bcrypt('pass'),
-				'isAdmin' => true,
-			)
-		);
-	
-		DB::table('users')->insert(
-			array(
-				'name' => 'user',
-				'email' => 'user@solent.com',
-				'password' => bcrypt('pass'),
-			)
-		);
+        
     }
 
     /**

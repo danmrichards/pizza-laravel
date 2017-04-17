@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Cart;
 use App\CartItem;
+use App\CartItemBase;
+use App\CartItemPizza;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -16,17 +18,19 @@ class CartController extends Controller
 //    		return Response::json($request);
 			//get currently logged in user id
 			$user_id = Auth::id();
-			
 			// get ajax data
 			$pizza_id = $request->pizza;
 			$base_id = $request->base;
+			
+			if($pizza_id == null || $base_id == null){
+				return json_encode(null);
+			}
 			$toppings_ids = $request->toppings;
 			$extras_ids = $request->extras;
 			$subtotal = $request->total;
-			
 			// check if cart for this user already exists
 			$cart = Cart::getUserCart();
-			return json_encode($cart);
+			
 			// check if cart exists
 			if($cart != null){
 				// if last users cart is completed
@@ -40,10 +44,20 @@ class CartController extends Controller
 				// based on recieved data create cart item
 				$cart_item = CartItem::create([
 					'cart_id' => $cart->id,
-					'pizza_id' => $pizza_id,
-					'base_id' => $base_id,
 					'subtotal' => $subtotal
 				]);
+				
+				$cart_item_pizza = new CartItemPizza();
+				$cart_item_pizza->cart_item_id = $cart_item->id;
+				$cart_item_pizza->pizza_id = $pizza_id;
+				$cart_item_pizza->save();
+				
+				
+				
+				$cart_item_base = new CartItemBase();
+				$cart_item_base->cart_item_id = $cart_item->id;
+				$cart_item_base->base_id = $base_id;
+				$cart_item_base->save();
 				
 				// return cart item back to ajax
 				foreach($toppings_ids as $topid){
@@ -56,16 +70,16 @@ class CartController extends Controller
 				foreach($extras_ids as $extraid){
 					DB::table('cart_item_extras')->insert([
 						'cart_item_id' => $cart_item->id,
-						'extras_id' => $extraid]);
+						'extras_id' => $extraid
+					]);
 				}
-				
 				
 				$cart->total = $this->calculateCartTotal($cart);
 				$cart->save();
 				
 				// in ajax inesrt data to cart
-				return Response::json($cart_item);
-				
+				$js_cart_item = $this->prepareResponse($cart_item);
+				return json_encode($js_cart_item);
 			}
 			
 			
@@ -80,5 +94,29 @@ class CartController extends Controller
  			$total += $cartItem->subtotal;
 		}
 		return $total;
+	}
+	
+	private function prepareResponse($cartItem){
+		$js_cart_item = [];
+		$js_cart_item['id'] = 3;
+		$js_cart_item['pizza_name'] = $cartItem->pizzas()->first()->pizza_name;
+		$js_cart_item['pizza_price'] = $cartItem->pizzas()->first()->pizza_price;
+		$js_cart_item['pizza_base'] = $cartItem->bases()->first()->base_name;
+		$js_cart_item['base_price'] = $cartItem->bases()->first()->base_price;
+		$js_cart_item['subtotal'] = $cartItem->subtotal;
+		$js_cart_item['toppings'] = [];
+		$js_cart_item['toppings_prices'] = [];
+		foreach($cartItem->toppings as $topping){
+			array_push($js_cart_item['toppings'], $topping->topping_name);
+			array_push($js_cart_item['toppings_prices'], $topping->topping_price);
+		}
+		$js_cart_item['extras'] = [];
+		$js_cart_item['extras_prices'] = [];
+		foreach($cartItem->extras as $extras){
+			array_push($js_cart_item['extras'], $extras->extras_name);
+			array_push($js_cart_item['extras_prices'], $extras->extras_price);
+		}
+		
+		return $js_cart_item;
 	}
 }

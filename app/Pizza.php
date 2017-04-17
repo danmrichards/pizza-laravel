@@ -18,7 +18,7 @@ class Pizza extends Model
 	}
 	
 	public function cartItems(){
-    	return $this->belongsToMany(CartItem::class, 'cart_items');
+    	return $this->belongsToMany(CartItem::class, 'cart_item_pizzas', 'pizza_id', 'cart_item_id');
 	}
 	
 }

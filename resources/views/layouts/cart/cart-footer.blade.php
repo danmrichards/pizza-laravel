@@ -1,6 +1,7 @@
 <div id="basket-footer">
-<form action="order/order" method="post">
-<input type="submit" value="Order" class="left">
-</form>
-<span id="total" class="right"></span>
+    <span id="total" class="right">{{ number_format($cart->total, 2) }}</span>
+    <form action="/order/checkout/{{$cart->id}}" method="POST">
+        {{ csrf_field() }}
+        <input type="submit" value="Order" class="left">
+    </form>
 </div>

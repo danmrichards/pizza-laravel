@@ -19,6 +19,18 @@ class CreateCartItemPizzas extends Migration
 			$table->integer('pizza_id')->unsigned();
         });
         
+        Schema::table('cart_item_pizzas', function(Blueprint $table){
+        	$table->foreign('cart_item_id')
+				->references('id')
+				->on('cart_items');
+		});
+	
+		Schema::table('cart_item_pizzas', function(Blueprint $table){
+			$table->foreign('pizza_id')
+				->references('id')
+				->on('pizzas');
+		});
+        
         
     }
 

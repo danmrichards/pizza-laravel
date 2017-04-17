@@ -11,9 +11,16 @@ class CartItemPizzasTableSeeder extends Seeder
      */
     public function run()
     {
-    	$cartItemPizzas = new \App\CartItemPizza();
-    	$cartItemPizzas->cart_item_id = 1;
-    	$cartItemPizzas->pizza_id = 1;
-    	$cartItemPizzas->save();
+    	$cartItemPizza = new \App\CartItemPizza();
+    	$cartItemPizza->cart_item_id = 1;
+    	$cartItemPizza->pizza_id = 1;
+    	$cartItemPizza->save();
+    	
+    	$cartItemPizza = new \App\CartItemPizza();
+    	$cartItemPizza->cart_item_id = 2;
+    	$cartItemPizza->pizza_id = 2;
+    	$cartItemPizza->save();
+    	
+    	
     }
 }

@@ -16,12 +16,11 @@ class Cart extends Model
 		return static::where('id', $id)->orderBy('created_at', 'desc')->first();
 	}
 	
-    public function cartItems(){
-    	return $this->hasMany(CartItem::class);
-	}
-	
-	public function user(){
-    	return $this->belongsTo(User::class);
+	/*
+	 * Get cart items
+	 */
+	public function cartItems(){
+		return $this->hasMany(CartItem::class, 'cart_id');
 	}
 	
 }

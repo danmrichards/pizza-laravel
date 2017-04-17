@@ -14,4 +14,8 @@ class Base extends Model
 	protected $fillable = [
 		'base_name', 'base_price'
 	];
+	
+	public function cartItems(){
+		return $this->belongsToMany(CartItem::class, 'cart_item_bases', 'base_id', 'cart_item_id');
+	}
 }

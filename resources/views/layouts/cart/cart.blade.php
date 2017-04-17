@@ -5,8 +5,7 @@
             <h2>Order summary</h2>
             @if(isset($cart))
                 @foreach($cart->cartItems as $cartItem)
-                    {{ $cartItem->pizzas }}
-                    {{--@include('layouts.cart.cart-item')--}}
+                    @include('layouts.cart.cart-item')
                 @endforeach
                 @include('layouts.cart.cart-footer')
             @else

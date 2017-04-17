@@ -17,11 +17,15 @@ class CreateCartItemsTable extends Migration
         Schema::create('cart_items', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('cart_id')->unsigned();
-//            $table->integer('pizza_id')->unsigned();
-//            $table->integer('base_id')->unsigned();
             $table->double('subtotal', 5,2)->nullable();
             $table->timestamps();
         });
+	
+		Schema::table('cart_items', function(Blueprint $table){
+			$table->foreign('cart_id')
+				->references('id')
+				->on('carts');
+		});
         
         
     }

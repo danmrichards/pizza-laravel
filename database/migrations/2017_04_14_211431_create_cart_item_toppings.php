@@ -18,6 +18,18 @@ class CreateCartItemToppings extends Migration
             $table->integer('cart_item_id')->unsigned();
             $table->integer('topping_id')->unsigned();
         });
+	
+		Schema::table('cart_item_toppings', function(Blueprint $table){
+			$table->foreign('cart_item_id')
+				->references('id')
+				->on('cart_items');
+		});
+	
+		Schema::table('cart_item_toppings', function(Blueprint $table){
+			$table->foreign('topping_id')
+				->references('id')
+				->on('toppings');
+		});
     }
 
     /**

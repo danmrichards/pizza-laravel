@@ -13,6 +13,12 @@ class CartItemsTableSeeder extends Seeder
     {
         $cartItem = new \App\CartItem();
         $cartItem->cart_id = 1;
+        $cartItem->subtotal = 14.09;
+		$cartItem->save();
+		
+		$cartItem = new \App\CartItem();
+        $cartItem->cart_id = 1;
+        $cartItem->subtotal = 6.00;
 		$cartItem->save();
     }
 }

@@ -18,6 +18,18 @@ class CreateCartItemBases extends Migration
 			$table->integer('cart_item_id')->unsigned();
 			$table->integer('base_id')->unsigned();
         });
+	
+		Schema::table('cart_item_bases', function(Blueprint $table){
+			$table->foreign('cart_item_id')
+				->references('id')
+				->on('cart_items');
+		});
+	
+		Schema::table('cart_item_bases', function(Blueprint $table){
+			$table->foreign('base_id')
+				->references('id')
+				->on('bases');
+		});
     }
 
     /**

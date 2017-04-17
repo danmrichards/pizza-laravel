@@ -18,6 +18,18 @@ class CreateCartItemExtras extends Migration
             $table->integer('cart_item_id')->unsigned();
             $table->integer('extras_id')->unsigned();
         });
+	
+		Schema::table('cart_item_extras', function(Blueprint $table){
+			$table->foreign('cart_item_id')
+				->references('id')
+				->on('cart_items');
+		});
+	
+		Schema::table('cart_item_extras', function(Blueprint $table){
+			$table->foreign('extras_id')
+				->references('id')
+				->on('extras');
+		});
     }
 
     /**

@@ -677,8 +677,8 @@ fieldset#base, fieldset#topping, fieldset#extras {
 
 #basket{
     position: fixed;
-    /*right: -305px;*/
-    right: 0px;
+    right: -305px;
+    /*right: 0px;*/
     top: 50%;
     transform: translateY(-50%);
     width: 375px;
@@ -758,6 +758,47 @@ fieldset#base, fieldset#topping, fieldset#extras {
     margin: 2px 0;
     font-size: 17px;
     font-weight: initial;
+}
+
+span.left.product_name {
+    width: 74%;
+    box-sizing: border-box;
+}
+
+.topping .left.product_name, .extras .left.product_name {
+    font-size: 13px;
+    padding-left: 10px;
+    line-height: 195%;
+}
+
+.topping .left.product_name::before, .extras .left.product_name::before {
+    content: '+';
+}
+
+span.right.product_price {
+    width: 24%;
+    color: red;
+    text-align: right;
+}
+
+.subtotal {
+    text-align: right;
+    font-weight: initial;
+    color: red;
+    margin-top: 15px;
+    float: right;
+}
+
+.subtotal::before {
+    content: "Subtotal: \A3";
+}
+
+.product_price::before {
+    content: "\A3";
+}
+
+#total:before {
+    content: 'Total: \A3';
 }
 
 

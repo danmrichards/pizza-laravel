@@ -12,7 +12,6 @@ class DashboardController extends Controller
 		}
     	if(auth()->user()->isAdmin){
 			return redirect('/admin');
-//    		return view('admin.index');
 		}
 		return view('dashboard');
 	}

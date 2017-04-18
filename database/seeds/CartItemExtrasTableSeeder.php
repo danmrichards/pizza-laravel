@@ -25,5 +25,20 @@ class CartItemExtrasTableSeeder extends Seeder
 		$cartItemExtras->cart_item_id = 1;
 		$cartItemExtras->extras_id = 3;
 		$cartItemExtras->save();
+	
+		$cartItemExtras = new \App\CartItemExtras();
+		$cartItemExtras->cart_item_id = 3;
+		$cartItemExtras->extras_id = 1;
+		$cartItemExtras->save();
+	
+		$cartItemExtras = new \App\CartItemExtras();
+		$cartItemExtras->cart_item_id = 3;
+		$cartItemExtras->extras_id = 2;
+		$cartItemExtras->save();
+	
+		$cartItemExtras = new \App\CartItemExtras();
+		$cartItemExtras->cart_item_id = 3;
+		$cartItemExtras->extras_id = 3;
+		$cartItemExtras->save();
     }
 }

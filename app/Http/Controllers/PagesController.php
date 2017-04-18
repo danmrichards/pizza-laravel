@@ -7,6 +7,7 @@ use App\Base;
 use App\Cart;
 use App\Extra;
 use App\Http\Controllers\Admin\GalleryController;
+use App\Order;
 use App\Topping;
 use File;
 use App\Pizza;
@@ -33,6 +34,15 @@ class PagesController extends Controller
 			return view('order')->with(compact('pizza', 'pizzas', 'images', 'bases', 'toppings', 'extras', 'cart'));
 		}
 		return view('order')->with(compact('pizzas', 'images', 'bases', 'toppings', 'extras', 'cart'));
+	}
+	
+	public function orders(){
+		$orders = auth()->user()->orders;
+		return view('order.orders')->with(compact('orders'));
+	}
+	
+	public function view(Order $order){
+		return view('order.view')->with(compact('order'));
 	}
 	
 	public function offers(){

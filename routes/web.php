@@ -62,6 +62,9 @@ Route::post('/admin/offers/add', 'OffersController@create');
 Route::post('/admin/offers/update/{offer}', 'OffersController@update');
 Route::post('/admin/offers/remove/{offer}', 'OffersController@deleteImage');
 
+Route::get('/admin/orders', 'Admin\AdminPagesController@orders');
+Route::get('/admin/order/view/{order}', 'OrdersController@view');
+
 Route::get('/admin/slider', 'Admin\AdminPagesController@slider');
 Route::post('/admin/slider/add', 'Admin\SliderController@add');
 Route::post('/admin/slider/delete', 'Admin\SliderController@delete');
@@ -105,3 +108,7 @@ Route::post('/admin/about/{about}', 'Admin\AboutController@save');
 Route::post('/cart/add', 'CartController@create');
 Route::get('/cart/remove/{cartItem}', 'CartController@destroy');
 Route::get('/cart/checkout/{cart}', 'CartController@checkout');
+Route::post('/order/{cart}', 'OrdersController@create');
+
+Route::get('/orders', 'PagesController@orders');
+Route::get('/order/view/{order}', 'PagesController@view');

@@ -20,6 +20,16 @@ class CartItemPizzasTableSeeder extends Seeder
     	$cartItemPizza->cart_item_id = 2;
     	$cartItemPizza->pizza_id = 2;
     	$cartItemPizza->save();
+	
+		$cartItemPizza = new \App\CartItemPizza();
+		$cartItemPizza->cart_item_id = 3;
+		$cartItemPizza->pizza_id = 1;
+		$cartItemPizza->save();
+	
+		$cartItemPizza = new \App\CartItemPizza();
+		$cartItemPizza->cart_item_id = 4;
+		$cartItemPizza->pizza_id = 2;
+		$cartItemPizza->save();
     	
     	
     }

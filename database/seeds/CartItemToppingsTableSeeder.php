@@ -26,5 +26,20 @@ class CartItemToppingsTableSeeder extends Seeder
 		$cartItemTopping->topping_id = 3;
 		$cartItemTopping->save();
 	
+		$cartItemTopping = new \App\CartItemTopping();
+		$cartItemTopping->cart_item_id = 3;
+		$cartItemTopping->topping_id = 1;
+		$cartItemTopping->save();
+	
+		$cartItemTopping = new \App\CartItemTopping();
+		$cartItemTopping->cart_item_id = 3;
+		$cartItemTopping->topping_id = 2;
+		$cartItemTopping->save();
+	
+		$cartItemTopping = new \App\CartItemTopping();
+		$cartItemTopping->cart_item_id = 3;
+		$cartItemTopping->topping_id = 3;
+		$cartItemTopping->save();
+	
 	}
 }

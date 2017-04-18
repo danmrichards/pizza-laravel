@@ -64,13 +64,31 @@
                     </label><br />
                     @endforeach
                 </fieldset>
-
                 <div id="buttons">
-                    <button type="reset">Reset</button>
-                    <button type="submit">Add to Order</button>
+                    @if(Auth::check())
+                        <button type="reset">Reset</button>
+                        <button type="submit">Add to Order</button>
+                    @else
+                        <div class="left">
+                            <div class="registerButton">
+                                <a href="/register">
+                                    <button type="button">Register</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="loginButton">
+                                <a href="/login">
+                                    <button type="button">Login</button>
+                                </a>
+                            </div>
+                        </div>
+                    @endif
+
                 </div>
             </aside>
         </form>
+        <div class="clear"></div>
     </section>
 
     @include('layouts.cart.cart')

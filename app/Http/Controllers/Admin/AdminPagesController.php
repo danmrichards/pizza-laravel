@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Extra;
+use App\Order;
 use App\Pizza;
 use App\Http\Controllers\Controller;
 use App\User;
@@ -37,6 +38,11 @@ class AdminPagesController extends Controller
 	public function offers(){
 		$offers = Offer::all();
 		return view('admin.offers.offers')->with(compact('offers'));
+	}
+	
+	public function orders(){
+		$orders = Order::all();
+		return view('admin.orders.orders')->with(compact('orders'));
 	}
 	
 	public function slider(){

@@ -18,7 +18,8 @@ class CreateCartItemsTable extends Migration
             $table->increments('id');
             $table->integer('cart_id')->unsigned();
             $table->double('subtotal', 5,2)->nullable();
-            $table->timestamps();
+			$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
 	
 		Schema::table('cart_items', function(Blueprint $table){

@@ -31,6 +31,17 @@ class User extends Authenticatable
     	return $query->where('isAdmin', false);
 	}
 	
+	public function carts(){
+    	return $this->hasMany(Cart::class, 'user_id');
+	}
+	
+	public function orders(){
+    	return $this->hasMany(Order::class, 'user_id');
+	}
+	
+	public function addresses(){
+		return $this->hasMany(Address::class, 'user_id');
+	}
 }
 
 

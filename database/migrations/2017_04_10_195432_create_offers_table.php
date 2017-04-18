@@ -18,7 +18,8 @@ class CreateOffersTable extends Migration
             $table->string('offer_name');
             $table->text('offer_desc');
             $table->string('image_name')->nullable();
-            $table->timestamps();
+			$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
     }
 

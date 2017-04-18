@@ -13,7 +13,7 @@ class Cart extends Model
 	
 	public static function getUserCart(){
 		$id = Auth::id();
-		return static::where('id', $id)->orderBy('created_at', 'desc')->first();
+		return static::where('user_id', $id)->where('completed', 0)->orderBy('updated_at', 'desc')->first();
 	}
 	
 	/*
@@ -21,6 +21,10 @@ class Cart extends Model
 	 */
 	public function cartItems(){
 		return $this->hasMany(CartItem::class, 'cart_id');
+	}
+	
+	public function user(){
+		RETURN $this->belongsTo(User::class, 'user_id', 'id');
 	}
 	
 }

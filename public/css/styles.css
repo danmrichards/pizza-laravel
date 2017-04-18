@@ -819,6 +819,7 @@ div.before{
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #order-summary{
@@ -868,6 +869,54 @@ div.before{
     top: 35px;
     margin-bottom: 30px;
     font-size: 2em;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 2px #ffcb62;
+}
+
+th{
+    background-color: #ffcb62;
+    height: 40px;
+}
+th:first-child{
+    border-top-left-radius: 10px;
+}
+th:last-child{
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child
+{
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    width: 10%
+}
+
+th:first-child, td:first-child{
+    width: 2%;
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+    background-color: #fff;
+}
+
+td.action form{
+    display: inline-block;
 }
 
 

@@ -6,7 +6,6 @@ use App\Cart;
 use App\CartItem;
 use App\CartItemBase;
 use App\CartItemPizza;
-use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -117,7 +116,8 @@ class CartController extends Controller
 	}
 	
 	public function checkout(Cart $cart){
-		return view('checkout')->with(compact('cart'));
+		$address = $cart->user->addresses()->orderBy('id', 'desc')->first();
+		return view('checkout')->with(compact('cart', 'address'));
 	}
 	
 	private function calculateCartTotal($cart){

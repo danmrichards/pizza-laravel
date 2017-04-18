@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Http\Request;
+
 Route::get('/', 'PagesController@index');
 Route::get('/order', 'PagesController@order');
 Route::get('/order/{pizza}', 'PagesController@order');
@@ -101,4 +103,5 @@ Route::get('/admin/about', 'Admin\AdminPagesController@about');
 Route::post('/admin/about/{about}', 'Admin\AboutController@save');
 
 Route::post('/cart/add', 'CartController@create');
-Route::post('/cart/checkout', 'OrderController@index');
+Route::get('/cart/remove/{cartItem}', 'CartController@destroy');
+Route::get('/cart/checkout/{cart}', 'CartController@checkout');

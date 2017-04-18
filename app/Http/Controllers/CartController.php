@@ -6,10 +6,10 @@ use App\Cart;
 use App\CartItem;
 use App\CartItemBase;
 use App\CartItemPizza;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Response;
 
 class CartController extends Controller
 {
@@ -86,6 +86,38 @@ class CartController extends Controller
 		}
 		
 		
+	}
+	
+	public function destroy(CartItem $cartItem){
+		$cart = $cartItem->cart;
+    	$lol = [];
+    	// remove extras
+		foreach($cartItem->extras as $extras){
+			DB::table('cart_item_extras')->where('cart_item_id', $cartItem->id)->delete();
+		}
+
+    	// remove toppings
+    	foreach($cartItem->toppings as $topping){
+			DB::table('cart_item_toppings')->where('cart_item_id', $cartItem->id)->delete();
+		}
+		// remove bases
+		DB::table('cart_item_bases')->where('cart_item_id', $cartItem->id)->delete();
+    	// remove pizzas
+		DB::table('cart_item_pizzas')->where('cart_item_id', $cartItem->id)->delete();
+    	// remove cart item
+		$cartItem->delete();
+    	// remove cart if last cart item has been removed too
+    	if(count($cart->cartItems) == 0){
+    		$cart->delete();
+		}else{
+			$cart->total = $this->calculateCartTotal($cart);
+			$cart->save();
+		}
+    	return response()->json('done');
+	}
+	
+	public function checkout(Cart $cart){
+		return view('checkout')->with(compact('cart'));
 	}
 	
 	private function calculateCartTotal($cart){

@@ -1,4 +1,5 @@
 <div class="order-item">
+    <a href="/cart/remove/{{ $cartItem->id }}"><div class="before"></div></a>
     <div>
         <div class="pizza">
             <span class="left product_name">

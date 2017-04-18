@@ -744,14 +744,14 @@ fieldset#base, fieldset#topping, fieldset#extras {
     position: relative;
 }
 
-.order-item:before {
-    background: url('../images/button_close.png') center center no-repeat;
-    content: url('http://i.stack.imgur.com/Icd9n.png');
-    position: absolute;
-    left: 10px;
-    top: 40%;
-    opacity: .2;
-}
+/*.order-item:before {*/
+    /*background: url('../images/button_close.png') center center no-repeat;*/
+    /*content: url('http://i.stack.imgur.com/Icd9n.png');*/
+    /*position: absolute;*/
+    /*left: 10px;*/
+    /*top: 40%;*/
+    /*opacity: .2;*/
+/*}*/
 
 .order-item span {
     line-height: 150%;
@@ -799,6 +799,75 @@ span.right.product_price {
 
 #total:before {
     content: 'Total: \A3';
+}
+
+div.before{
+    background: url('../images/button_close.png') center center no-repeat;
+    opacity: 0.25;
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.summary-wrapper{
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: inset 0 0 6px rgb(0,0,0);
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#order-summary{
+    text-align: left;
+}
+
+#order-summary span.additions{
+    display: block;
+    font-size: 0.7em;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+#order-summary span.additions::before{
+    content: '+';
+}
+
+#order-final .center p{
+    width: 55%;
+    margin: 0 auto;
+}
+
+#order-final .center label{
+    font-size: 10px;
+    display: block;
+    color: red;
+}
+
+#order-final .center p .left{
+    text-align: left;
+}
+
+#order-final .center p .right{
+    text-align: right;
+}
+
+#order-final fieldset {
+    background-color: #EEE;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    padding: 35px 13px;
+    margin: 20px 40px;
+}
+
+#order-final fieldset legend{
+    position: relative;
+    top: 35px;
+    margin-bottom: 30px;
+    font-size: 2em;
 }
 
 

@@ -94,6 +94,21 @@ $(function(){
         });
 
     });
+
+    $('.before').on('click', function(e){
+        e.preventDefault();
+        var clicked = $(this);
+        var url = $(this).parent().attr('href');
+        $.get(url, function(data){
+            if(data === 'done'){
+                clicked.closest('div.order-item').slideUp('slow', function(){
+                    $(this).remove();
+                });
+            }
+        });
+    });
+
+
 });
 
 function updateField(){

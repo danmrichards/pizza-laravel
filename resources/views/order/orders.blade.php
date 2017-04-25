@@ -15,7 +15,7 @@
                 @foreach($orders as $order)
                 <tr>
                     <td>{{ $order->id }}</td>
-                    <td>{{ $order->cart->total }}</td>
+                    <td>{{ number_format($order->cart->total, 2) }}</td>
                     <td>{{ $order->created_at }}</td>
                     <td>
                         <a href="/order/view/{{$order->id}}"><button>View</button></a>

@@ -28,9 +28,9 @@
                 <div class="summary-wrapper">
                     <div class="right">
                         <span class="left">Total</span>
-                        <span class="right price">{{ number_format($cart->cart->total, 2) }}</span>
+                        <span class="right price">{{ number_format($cart->total, 2) }}</span>
                     </div>
-                <div class="clear"></div>
+                    <div class="clear"></div>
                 </div>
                 <hr />
                 <div class="summary-wrapper">

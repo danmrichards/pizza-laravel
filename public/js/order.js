@@ -76,9 +76,14 @@ $(function(){
                 if(response == null){
                     return false;
                 }
+                $('#empty-basket').remove();
                 // add cart item to cart
-                $('#basket-footer').prepend(addCartItem(response));
+                $('#total-box').append(addCartItem(response));
                 // slide cart out
+                if($('#basket-footer').length === 0){
+                    $('#total-box').append(cartFooter(response));
+                }
+                updateTotalBoxTotalValue();
                 $('#basket').animate({
                     'right': '0px'
                 }, 1000, function(){
@@ -103,6 +108,10 @@ $(function(){
             if(data === 'done'){
                 clicked.closest('div.order-item').slideUp('slow', function(){
                     $(this).remove();
+                    if($('.order-item').length == 0){
+                        $('#basket-footer').remove();
+                        $('#total-box').append('<p id="empty-basket">Nothing in your basket yet!</p>');
+                    }
                 });
             }
         });
@@ -129,39 +138,62 @@ function updateField(){
     }, 750);
 }
 
-function addCartItem(data){
-    var pizza_price = parseFloat(data.pizza_price);
-    var base_price = parseFloat(data.base_price);
+function addCartItem(response){
+    
+    var pizza_price = parseFloat(response.pizza_price);
+    var base_price = parseFloat(response.base_price);
     productPrice = pizza_price + base_price;
     var cartItem = '<div class="order-item">\
+        <a href="/cart/remove/'+ response.id +'"><div class="before"></div></a>\
         <div>\
         <div class="pizza">\
-        <span class="left product_name">'+data.pizza_name + ' ' + data.pizza_base +'</span>\
+        <span class="left product_name">'+response.pizza_name + ' ' + response.pizza_base +'</span>\
     <span class="right product_price">'+ productPrice.toFixed(2) +'</span>\
     </div>';
 
-    if(data.toppings.length > 0){
-        for(var i = 0; i < data.toppings.length; i++){
+    if(response.toppings.length > 0){
+        for(var i = 0; i < response.toppings.length; i++){
             cartItem += '<div class="topping">\
-                <span class="left product_name">'+ data.toppings[i] +'</span>\
-                <span class="right product_price">'+ data.toppings_prices[i].toFixed(2) +'</span>\
+                <span class="left product_name">'+ response.toppings[i] +'</span>\
+                <span class="right product_price">'+ response.toppings_prices[i].toFixed(2) +'</span>\
             </div>';
         }
     }
 
-    if(data.extras.length > 0){
-        for(var i = 0; i < data.extras.length; i++){
+    if(response.extras.length > 0){
+        for(var i = 0; i < response.extras.length; i++){
             cartItem += '<div class="extras">\
-                <span class="left product_name">'+ data.extras[i] +'</span>\
-                <span class="right product_price">'+ data.extras_prices[i].toFixed(2) +'</span>\
+                <span class="left product_name">'+ response.extras[i] +'</span>\
+                <span class="right product_price">'+ response.extras_prices[i].toFixed(2) +'</span>\
             </div>';
         }
     }
-    cartItem += '<div class="subtotal">'+ data.subtotal +'</div>\
+    cartItem += '<div class="subtotal">'+ response.subtotal +'</div>\
             <div class="clear"></div>\
         </div>\
     </div>';
-
     return cartItem;
+
+}
+
+function updateTotalBoxTotalValue() {
+    var total = 0;
+    $('#total-box .subtotal').each(function(){
+        var subtotal = parseFloat($(this).text());
+        total += subtotal;
+    });
+    $('#total').text(total.toFixed(2));
+}
+
+function cartFooter(response){
+    var cartFooter =
+        '<div id="basket-footer">\
+            <span id="total" class="right"></span>\
+            <a href="/cart/checkout/' + response.cart_id + '"  id="checkout">\
+                <button type="button">Checkout</button>\
+            </a>\
+        </div>';
+
+    return cartFooter;
 
 }

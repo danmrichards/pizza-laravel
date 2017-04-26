@@ -1,0 +1,44 @@
+version: '2'
+
+services:
+  composer:
+    image: composer/composer:php7
+    volumes:
+      - ./service:/app
+    command: install
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    restart: always
+    networks:
+      - service-network
+  fpm:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    depends_on:
+      - mysql
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./service:/service
+    networks:
+      - service-network
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/compose/nginx/Dockerfile
+    depends_on:
+      - fpm
+    ports:
+      - "80:80"
+    networks:
+      - service-network
+
+networks:
+  service-network:
+    driver: bridge

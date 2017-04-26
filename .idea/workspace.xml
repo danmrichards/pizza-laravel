@@ -2,310 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202da09-9622-4cc7-a47d-978add78ced6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/public/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/pizza-laravel.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker-compose.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/compose/nginx/Dockerfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/compose/nginx/default.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/compose/nginx/nginx.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/mysql-proxy/Dockerfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/mysql-proxy/nginx.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/nginx/Dockerfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/nginx/default.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/nginx/nginx.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/php/Dockerfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/php/www.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.env.example" afterPath="$PROJECT_DIR$/service/.env.example" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/service/.gitattributes" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/About.php" afterPath="$PROJECT_DIR$/service/app/About.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Address.php" afterPath="$PROJECT_DIR$/service/app/Address.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Base.php" afterPath="$PROJECT_DIR$/service/app/Base.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Cart.php" afterPath="$PROJECT_DIR$/service/app/Cart.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/CartItem.php" afterPath="$PROJECT_DIR$/service/app/CartItem.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/CartItemBase.php" afterPath="$PROJECT_DIR$/service/app/CartItemBase.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/CartItemExtras.php" afterPath="$PROJECT_DIR$/service/app/CartItemExtras.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/CartItemPizza.php" afterPath="$PROJECT_DIR$/service/app/CartItemPizza.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/CartItemTopping.php" afterPath="$PROJECT_DIR$/service/app/CartItemTopping.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/service/app/Console/Kernel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/service/app/Exceptions/Handler.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Extra.php" afterPath="$PROJECT_DIR$/service/app/Extra.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/AddressController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/AddressController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AboutController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Admin/AboutController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminPagesController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Admin/AdminPagesController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BasesController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Admin/BasesController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CustomersController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Admin/CustomersController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ExtrasController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Admin/ExtrasController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/GalleryController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Admin/GalleryController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PizzasController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Admin/PizzasController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Admin/SliderController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ToppingsController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Admin/ToppingsController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Auth/ForgotPasswordController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Auth/LoginController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Auth/RegisterController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Auth/ResetPasswordController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/CartController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/Controller.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/DashboardController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/MessagesController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/MessagesController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/OffersController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/OrdersController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/PagesController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/PizzasController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/PizzasController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/RegisterController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" afterPath="$PROJECT_DIR$/service/app/Http/Controllers/SessionsController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/service/app/Http/Kernel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterPath="$PROJECT_DIR$/service/app/Http/Middleware/EncryptCookies.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/service/app/Http/Middleware/RedirectIfAuthenticated.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" afterPath="$PROJECT_DIR$/service/app/Http/Middleware/TrimStrings.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/service/app/Http/Middleware/VerifyCsrfToken.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Mail/MessageReply.php" afterPath="$PROJECT_DIR$/service/app/Mail/MessageReply.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Message.php" afterPath="$PROJECT_DIR$/service/app/Message.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Offer.php" afterPath="$PROJECT_DIR$/service/app/Offer.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Order.php" afterPath="$PROJECT_DIR$/service/app/Order.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Pizza.php" afterPath="$PROJECT_DIR$/service/app/Pizza.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/service/app/Providers/AppServiceProvider.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterPath="$PROJECT_DIR$/service/app/Providers/AuthServiceProvider.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterPath="$PROJECT_DIR$/service/app/Providers/BroadcastServiceProvider.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/service/app/Providers/EventServiceProvider.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/service/app/Providers/RouteServiceProvider.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Topping.php" afterPath="$PROJECT_DIR$/service/app/Topping.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/service/app/User.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/artisan" afterPath="$PROJECT_DIR$/service/artisan" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap/app.php" afterPath="$PROJECT_DIR$/service/bootstrap/app.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap/autoload.php" afterPath="$PROJECT_DIR$/service/bootstrap/autoload.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap/cache/.gitignore" afterPath="$PROJECT_DIR$/service/storage/logs/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/service/composer.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/service/composer.lock" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/service/config/app.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/auth.php" afterPath="$PROJECT_DIR$/service/config/auth.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/broadcasting.php" afterPath="$PROJECT_DIR$/service/config/broadcasting.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/cache.php" afterPath="$PROJECT_DIR$/service/config/cache.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/service/config/database.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/filesystems.php" afterPath="$PROJECT_DIR$/service/config/filesystems.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/service/config/mail.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/queue.php" afterPath="$PROJECT_DIR$/service/config/queue.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/services.php" afterPath="$PROJECT_DIR$/service/config/services.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/session.php" afterPath="$PROJECT_DIR$/service/config/session.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/view.php" afterPath="$PROJECT_DIR$/service/config/view.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/.gitignore" afterPath="$PROJECT_DIR$/service/database/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterPath="$PROJECT_DIR$/service/database/factories/ModelFactory.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_07_144541_create_pizzas_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_07_144541_create_pizzas_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_08_154459_create_messages_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_08_154459_create_messages_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_10_195432_create_offers_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_10_195432_create_offers_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_12_124217_create_about_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_12_124217_create_about_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_12_195041_create_bases_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_12_195041_create_bases_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_12_204012_create_toppings_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_12_204012_create_toppings_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_12_211550_create_extras_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_12_211550_create_extras_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_14_210210_create_carts_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_14_210210_create_carts_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_14_210734_create_cart_items_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_14_210734_create_cart_items_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_14_211431_create_cart_item_toppings.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_14_211431_create_cart_item_toppings.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_14_211816_create_cart_item_extras.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_14_211816_create_cart_item_extras.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_16_134035_create_cart_item_pizzas.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_16_134035_create_cart_item_pizzas.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_16_134045_create_cart_item_bases.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_16_134045_create_cart_item_bases.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_18_100655_create_addresses_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_18_100655_create_addresses_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_04_18_100656_create_orders_table.php" afterPath="$PROJECT_DIR$/service/database/migrations/2017_04_18_100656_create_orders_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/AboutTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/AboutTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/AddressesTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/AddressesTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/BasesTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/BasesTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/CartItemBasesTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/CartItemBasesTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/CartItemExtrasTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/CartItemExtrasTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/CartItemPizzasTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/CartItemPizzasTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/CartItemToppingsTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/CartItemToppingsTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/CartItemsTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/CartItemsTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/CartsTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/CartsTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/DatabaseSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/ExtrasTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/ExtrasTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/OrdersTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/OrdersTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/PizzasTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/PizzasTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/ToppingsTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/ToppingsTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterPath="$PROJECT_DIR$/service/database/seeds/UsersTableSeeder.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/service/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="$PROJECT_DIR$/service/phpunit.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/service/public/.htaccess" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/admin.css" afterPath="$PROJECT_DIR$/service/public/css/admin.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/service/public/css/app.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/styles.css" afterPath="$PROJECT_DIR$/service/public/css/styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/basket.png" afterPath="$PROJECT_DIR$/service/public/images/gallery/basket.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/button_close.png" afterPath="$PROJECT_DIR$/service/public/images/button_close.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/button_close_2.png" afterPath="$PROJECT_DIR$/service/public/images/button_close_2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/01.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/02.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/03.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/04.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/basket.png" afterPath="$PROJECT_DIR$/service/public/images/basket.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/2/00.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/2/00.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/2/01.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/2/01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/2/02.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/2/02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/2/05.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/2/05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/3/0.jpeg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/3/0.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/3/1.png" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/3/1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/3/2.jpeg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/3/2.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/3/3.jpeg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/3/3.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/3/4.jpeg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/3/4.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/6/00.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/vegi/00.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/6/01.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/vegi/01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/6/02.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/vegi/02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/6/03.png" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/vegi/03.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/6/04.png" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/vegi/04.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/6/05.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/vegi/05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/7/0.jpeg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/7/0.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/7/1.jpeg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/7/1.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/7/2.jpeg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/7/2.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/7/3.jpeg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/7/3.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/hawaii.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/hawaii.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/margherita.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/margherita.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/new solent.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/new solent.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/new solent/00.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/new solent/00.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/new solent/01.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/new solent/01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/new solent/02.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/new solent/02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/new solent/03.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/new solent/03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/pepperoni.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/pepperoni.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/vegi.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/vegi.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/vegi/00.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/6/00.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/vegi/01.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/6/01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/vegi/02.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/6/02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/vegi/03.png" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/6/03.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/vegi/04.png" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/6/04.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzas/vegi/05.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzas/6/05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/pizzeria.jpg" afterPath="$PROJECT_DIR$/service/public/images/pizzeria.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/04_d.20141002161324.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/04_d.20141002161324.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/3635b-restaurant_umag_v.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/3635b-restaurant_umag_v.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/Johns_PizzeriaV1_460x285.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/Johns_PizzeriaV1_460x285.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/PIZZERIA_1830.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/PIZZERIA_1830.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/Pizzeria-al-Lago-Arsie.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/Pizzeria-al-Lago-Arsie.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/download (1).jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/download (1).jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/download (2).jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/download (2).jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/download.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/download.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/images.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/images.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/pizza.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/pizza.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/pizzeria-la-bambina.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/pizzeria-la-bambina.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/pizzeria-napoli.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/pizzeria-napoli.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/restaurant/pizzeria1.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/restaurant/pizzeria1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/gallery/slice.jpg" afterPath="$PROJECT_DIR$/service/public/images/slice.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/header_tail.png" afterPath="$PROJECT_DIR$/service/public/images/header_tail.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/logo.png" afterPath="$PROJECT_DIR$/service/public/images/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/menu_border.png" afterPath="$PROJECT_DIR$/service/public/images/menu_border.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/mini_pizza.png" afterPath="$PROJECT_DIR$/service/public/images/mini_pizza.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/offers/php5sfzFw.jpg" afterPath="$PROJECT_DIR$/service/public/images/offers/php5sfzFw.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/offers/phpZYUCPV.jpg" afterPath="$PROJECT_DIR$/service/public/images/offers/phpZYUCPV.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/offers/phpgqcd7G.jpg" afterPath="$PROJECT_DIR$/service/public/images/offers/phpgqcd7G.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/offers/phpvyv3A4.jpg" afterPath="$PROJECT_DIR$/service/public/images/offers/phpvyv3A4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/pizzas/1/00.jpg" afterPath="$PROJECT_DIR$/service/public/images/pizzas/1/00.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/pizzas/1/01.jpg" afterPath="$PROJECT_DIR$/service/public/images/pizzas/1/01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/pizzas/2/phpLJyqh9.jpg" afterPath="$PROJECT_DIR$/service/public/images/pizzas/2/phpLJyqh9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/pizzas/2/phpkHn7UG.jpg" afterPath="$PROJECT_DIR$/service/public/images/pizzas/2/phpkHn7UG.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/pizzeria.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/pizzeria.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/slice.jpg" afterPath="$PROJECT_DIR$/service/public/images/gallery/slice.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/slider/controls/left-arrow-lg.png" afterPath="$PROJECT_DIR$/service/public/images/slider/controls/left-arrow-lg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/slider/controls/right-arrow-lg.png" afterPath="$PROJECT_DIR$/service/public/images/slider/controls/right-arrow-lg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/slider/slides/phpKXUyPR.jpg" afterPath="$PROJECT_DIR$/service/public/images/slider/slides/phpKXUyPR.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/slider/slides/phpfdxBd4.jpg" afterPath="$PROJECT_DIR$/service/public/images/slider/slides/phpfdxBd4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/slider/slides/phpktfHBg.jpg" afterPath="$PROJECT_DIR$/service/public/images/slider/slides/phpktfHBg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/slider/slides/phpzFMPZs.jpg" afterPath="$PROJECT_DIR$/service/public/images/slider/slides/phpzFMPZs.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/toTopBtn.png" afterPath="$PROJECT_DIR$/service/public/images/toTopBtn.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/service/public/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/service/public/js/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/jquery-3.2.0.min.js" afterPath="$PROJECT_DIR$/service/public/js/jquery-3.2.0.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/jquery.validate.js" afterPath="$PROJECT_DIR$/service/public/js/jquery.validate.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/order.js" afterPath="$PROJECT_DIR$/service/public/js/order.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/pizza-page.js" afterPath="$PROJECT_DIR$/service/public/js/pizza-page.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/script.js" afterPath="$PROJECT_DIR$/service/public/js/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/slider.js" afterPath="$PROJECT_DIR$/service/public/js/slider.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/tinymce.js" afterPath="$PROJECT_DIR$/service/public/js/tinymce.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/service/public/robots.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/web.config" afterPath="$PROJECT_DIR$/service/public/web.config" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/service/readme.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assets/js/app.js" afterPath="$PROJECT_DIR$/service/resources/assets/js/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" afterPath="$PROJECT_DIR$/service/resources/assets/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assets/js/components/Example.vue" afterPath="$PROJECT_DIR$/service/resources/assets/js/components/Example.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assets/sass/_variables.scss" afterPath="$PROJECT_DIR$/service/resources/assets/sass/_variables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/service/resources/assets/sass/app.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" afterPath="$PROJECT_DIR$/service/resources/lang/en/auth.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterPath="$PROJECT_DIR$/service/resources/lang/en/pagination.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterPath="$PROJECT_DIR$/service/resources/lang/en/passwords.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" afterPath="$PROJECT_DIR$/service/resources/lang/en/validation.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/about.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/about.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/about/about.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/about/about.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/customers/add.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/customers/add.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/customers/customers.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/customers/customers.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/customers/edit.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/customers/edit.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/gallery/gallery.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/gallery/gallery.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/index.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/footer.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/layouts/footer.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/layouts/header.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/left.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/layouts/left.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/layouts/master.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/top_menu.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/layouts/top_menu.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/messages/messages.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/messages/messages.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/messages/read.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/messages/read.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/offers/add.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/offers/add.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/offers/edit.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/offers/edit.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/offers/offers.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/offers/offers.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/orders/orders.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/orders/orders.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/orders/view.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/orders/view.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/bases/add.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/bases/add.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/bases/bases.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/bases/bases.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/bases/edit.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/bases/edit.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/extras/add.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/extras/add.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/extras/edit.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/extras/edit.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/extras/extras.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/extras/extras.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/index.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/index.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/pizzas/add.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/pizzas/add.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/pizzas/edit.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/pizzas/edit.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/pizzas/pizzas.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/pizzas/pizzas.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/toppings/add.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/toppings/add.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/toppings/edit.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/toppings/edit.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/products/toppings/toppings.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/products/toppings/toppings.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/slider/slider.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/admin/slider/slider.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/checkout.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/contact.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/dashboard.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/gallery.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/gallery.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/index.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/layouts/cart/cart-footer.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/layouts/cart/cart-footer.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/layouts/cart/cart-item.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/layouts/cart/cart-item.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/layouts/cart/cart.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/layouts/cart/cart.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/layouts/error.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/layouts/error.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/layouts/footer.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/layouts/header.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/layouts/master.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/layouts/nav.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/mails/message-reply.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/mails/message-reply.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/offers.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/offers.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/order.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/order.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/order/orders.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/order/orders.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/order/view.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/order/view.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/pizzas/show.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/pizzas/show.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/registration/create.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/registration/create.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/sessions/index.blade.php" afterPath="$PROJECT_DIR$/service/resources/views/sessions/index.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/service/routes/api.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/channels.php" afterPath="$PROJECT_DIR$/service/routes/channels.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/console.php" afterPath="$PROJECT_DIR$/service/routes/console.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/service/routes/web.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server.php" afterPath="$PROJECT_DIR$/service/server.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/storage/app/.gitignore" afterPath="$PROJECT_DIR$/service/storage/app/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" afterPath="$PROJECT_DIR$/service/storage/framework/views/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/storage/framework/.gitignore" afterPath="$PROJECT_DIR$/service/storage/framework/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterPath="$PROJECT_DIR$/service/storage/framework/testing/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterPath="$PROJECT_DIR$/service/storage/framework/sessions/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterPath="$PROJECT_DIR$/service/storage/framework/cache/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterPath="$PROJECT_DIR$/service/storage/app/public/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/storage/logs/.gitignore" afterPath="$PROJECT_DIR$/service/bootstrap/cache/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" afterPath="$PROJECT_DIR$/service/tests/CreatesApplication.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterPath="$PROJECT_DIR$/service/tests/Feature/ExampleTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/TestCase.php" afterPath="$PROJECT_DIR$/service/tests/TestCase.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterPath="$PROJECT_DIR$/service/tests/Unit/ExampleTest.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webpack.mix.js" afterPath="$PROJECT_DIR$/service/webpack.mix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/pizza-laravel.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -317,15 +18,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="681">
-                <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -408,20 +106,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pizza-laravel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pizza-laravel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pizza-laravel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -559,12 +243,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493219628902</updated>
-      <workItem from="1493219630067" duration="3193000" />
+      <workItem from="1493219630067" duration="3806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3193000" />
+    <option name="totallyTimeSpent" value="3806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -1010,14 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -1029,11 +705,19 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="681">
+          <first_editor relative-caret-position="536">
             <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
